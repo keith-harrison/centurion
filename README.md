@@ -15,15 +15,21 @@ git clone https://github.com/keith-harrison/centurion
 # I then fixed floor division in some of the files and removed the comparison if fval < fval_min or fval_min is None:
 # I still need to double check that this is correct.
 # I then just jumped around making sure to 
-python setup.py build install
-#Wherever possible.
+python setup.py build
+python setup.py install
+#Wherever possible. /centurion /centurion/centurion /centurion/external /centurion/externals/iced 
 ```
-
 ## Usage
+Goto example folder and then edit files at below location for your own analyses
+Example file location, you will have your username below
+/home/[USERNAME]/miniconda3/lib/python3.9/site-packages/iced/datasets/data/duan2009/
+This location is made from the python setup files, edit these files
+E.g. if using nextflow you can edit the raw txt and raw txt bed files that the pipeline produces to run centurion, see *fixbed.ipynb* for how to do that.
+To examples shown below
 ```
-python test
+cd ./centurion/examples
+python plot_finding_centromeres.py
 ```
-
 PLEASE CITE ORIGINAL GITHUB I HAVE FORKED FROM!
 ```
 

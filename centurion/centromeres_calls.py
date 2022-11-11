@@ -14,9 +14,9 @@ def centromeres_calls(counts, lengths, resolution=40000, init=None,
     Parameters
     """
     if sigma is None:
-        sigma = 80000 / resolution
+        sigma = 80000 // resolution
 
-    coef = 40000 / resolution
+    coef = 40000 // resolution
 
     if init is None:
         counts_40kb, lengths_40kb = utils.downsample_resolution(

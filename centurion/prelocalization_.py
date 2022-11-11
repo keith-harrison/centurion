@@ -260,7 +260,8 @@ def optimize_centromeres(counts, lengths, candidates, sigma=4, verbose=0,
         fval, results = refine_centromeres(
             counts, lengths, c,
             sigma=sigma, verbose=verbose)
-        if fval < fval_min or fval_min is None:
+        #if fval < fval_min or fval_min is None:
+        if fval_min is None:
             fval_min = fval
             best_results = results
 

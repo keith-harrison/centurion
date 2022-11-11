@@ -22,8 +22,11 @@ python setup.py install
 ## Usage
 Goto example folder and then edit files at below location for your own analyses
 Example file location, you will have your username below
+
 /home/[USERNAME]/miniconda3/lib/python3.9/site-packages/iced/datasets/data/duan2009/
+
 This location is made from the python setup files, edit these files
+
 E.g. if using nextflow you can edit the raw txt and raw txt bed files that the pipeline produces to run centurion, see *fixbed.ipynb* for how to do that.
 To examples shown below
 ```
